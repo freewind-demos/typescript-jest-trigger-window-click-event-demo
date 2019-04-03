@@ -1,7 +1,7 @@
-TypeScript Jest Demo
+TypeScript Jest "jest-dom" Demo
 ===========================
 
-使用typescript就需要在`jest.config.js`中使用`ts-jest`作为`preset`
+使用`jest-dom`可以扩展`expect`支持的方法。
 
 ```
 npm install

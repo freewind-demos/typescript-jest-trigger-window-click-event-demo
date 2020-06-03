@@ -1,5 +1,3 @@
-import 'jest-dom/extend-expect'
-
 import hello from './hello';
 
 test('hello', () => {

@@ -1,10 +1,10 @@
-import listenClickOnWindow from "./listenClickOnWindow";
+import listenOnClick from "./listenOnClick";
 
 beforeEach(() => {
   jest.resetAllMocks();
 })
 
-describe('clickOnWindow', () => {
+describe('listenOnClick', () => {
 
   const onClick = jest.fn();
 
@@ -13,13 +13,13 @@ describe('clickOnWindow', () => {
   })
 
   it('works with manually created click event', () => {
-    listenClickOnWindow(onClick);
+    listenOnClick(onClick);
     window.dispatchEvent(new Event('click'))
     expect(onClick).toHaveBeenCalled();
   })
 
   it('works with real triggered click event', () => {
-    listenClickOnWindow(onClick);
+    listenOnClick(onClick);
     window.document.body.click();
 
     expect(onClick).toHaveBeenCalled();

@@ -1,9 +1,7 @@
-TypeScript Jest "jest-dom" Demo
+TypeScript Jest Trigger Window Click Event Demo
 ===========================
 
-使用`jest-dom`可以扩展`expect`支持的方法。
-
-注意`jest.config.js`与`src/test-declarations.d.ts`中的内容
+如何用两种方法触发window.click事件
 
 ```
 npm install
